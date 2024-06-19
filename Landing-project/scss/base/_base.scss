@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url('./fonts/Poppins-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url('./fonts/Poppins-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: $black-color;
+    line-height: 1.6875;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &--fluid {
+        max-width: unset; // сброс ширины
+        width: 100%;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden; /* элемент становится 
+    невидимым, находясь при этом на своем месте */
+    
+    width: 1px;
+    height: 1px;
+    display: block;
+    margin-left: -1000000px;
+    background: transparent; // прозрачный фон
+    font-size: 0;
+}
+
+.none {
+    display: none;
+}

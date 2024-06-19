@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    align-items: center; // по вертикали центр
+
+    font-style: 24px;
+    font-weight: 700;
+    line-height: 1;
+    
+    img {
+        margin-right: 15px;
+    }
+}

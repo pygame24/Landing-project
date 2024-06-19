@@ -1,0 +1,53 @@
+.contacts {
+    position: relative;
+
+    padding-top: 200px;
+    padding-bottom: 55px;
+    background-image: url("./../img/contacts/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 743px;
+        height: 372px;
+        background-image: url("./../img/contacts/oval.svg");
+        background-repeat: no-repeat;
+        background-size: initial; // Стандпртный размер
+
+        position: absolute;
+        bottom: -1px;
+        right: 78px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 478px;
+        height: 547px;
+        background-image: url("./../img/contacts/girl.png");
+        background-repeat: no-repeat;
+        background-size: initial; // Стандпртный размер
+        
+        position: absolute;
+        bottom: 0;
+        right: 264px;
+    }
+}
+
+.contact__info {
+    max-width: 360px;
+    margin-right: 95px;
+}
+
+.contact__title {
+    margin-bottom: 15px;
+    max-width: 360px;
+}
+
+.contact__text {
+    margin-bottom: 30px;
+    max-width: 342px;
+}

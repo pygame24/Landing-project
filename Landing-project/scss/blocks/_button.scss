@@ -1,0 +1,48 @@
+.button {
+    display: inline-block;
+    height: 58px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 29px;
+    background-color: $accent-color;
+
+    line-height: 58px; // Высота кнопки
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: $accent-hover-color;
+    }
+
+    &--white {
+        background-color: #fff;
+        color: $black-color;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+        &:hover {
+            background-color: $black-color;
+            color: #fff;
+        }
+    }
+
+    &--play {
+        position: relative;
+
+        padding-left: 50px;
+
+        &::before {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-image: url('./../img/icons/play.svg');
+            background-size: initial;
+            background-repeat: no-repeat;
+        }
+    }
+}
